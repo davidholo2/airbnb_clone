@@ -23,8 +23,3 @@ dist-ssr
 *.sln
 *.sw?
 
-
-.idea
-api/node_modules
-api/.env
-api/uploads/*
