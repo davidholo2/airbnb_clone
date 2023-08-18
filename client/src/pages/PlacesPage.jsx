@@ -39,7 +39,7 @@ export default function PlacesPage() {
         {places.length > 0 &&
           places.map((place) => (
             <Link
-              to={"/account/bookings"}
+              to={"/account/places/" + place._id}
               className="flex cursor-pointer gap-4 bg-gray-100 p-4 rounded-2xl"
               key={place._id}
             >
