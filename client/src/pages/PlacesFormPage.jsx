@@ -41,10 +41,8 @@ export default function PlacesFormPage() {
   async function handlePerkCheckboxClick(event) {
     const perkName = event.target.name;
     if (perks.includes(perkName)) {
-      // Remove the perk if it's already in the list
       setPerks(perks.filter((perk) => perk !== perkName));
     } else {
-      // Add the perk to the list
       setPerks([...perks, perkName]);
     }
   }
