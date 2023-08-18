@@ -91,6 +91,7 @@ export default function BookingWidget({ place }) {
           />
         </div>
       </div>
+      if
       {user && (
         <button onClick={bookThisPlace} className="primary mt-4">
           Book this place
