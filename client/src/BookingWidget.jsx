@@ -91,14 +91,18 @@ export default function BookingWidget({ place }) {
           />
         </div>
       </div>
-      if
-      {user && (
-        <button onClick={bookThisPlace} className="primary mt-4">
-          Book this place
-          {numberOfNights > 0 && <span> ${numberOfNights * place.price}</span>}
-        </button>
+      {user ? (
+        <div>
+          <button onClick={bookThisPlace} className="primary mt-4">
+            Book this place
+            {numberOfNights > 0 && (
+              <span> ${numberOfNights * place.price}</span>
+            )}
+          </button>
+        </div>
+      ) : (
+        <div>Log in first</div>
       )}
-      else{<div>Log in first</div>}
     </div>
   );
 }
