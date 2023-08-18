@@ -101,7 +101,7 @@ export default function BookingWidget({ place }) {
           </button>
         </div>
       ) : (
-        <div>Log in first</div>
+        <div className=" text-center text-primary underline">Log in first</div>
       )}
     </div>
   );
